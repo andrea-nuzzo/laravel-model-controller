@@ -1,1 +1,76 @@
-//
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #161a1d;
+    font-family: 'Roboto', sans-serif;
+}
+
+header{
+    background-color: #e5383b;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    padding-left: 50px;
+    color: #161a1d;
+}
+
+main{
+    .container{
+        width: 70% ;
+        margin: 0 auto;
+        .movie{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 50px;
+    
+            .cardMovie{
+                width: 200px;
+                height: 300px;
+                padding: 15px;
+                margin-bottom: 40px;
+                color: #161a1d;
+
+                background-color: #b1a7a6;
+                border-radius: 1em;
+
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                .title, .vote{
+                    height: calc(100%/6);
+                }
+
+                .title{
+                    font-size: 1em;
+                    display: flex;
+                    align-items: flex-end;
+
+                }
+
+                .vote{
+                    display: flex;
+                    align-items: center;
+                }
+
+                .img{
+                    height: calc(100%/6)*4;
+                    width: 80%;
+                    border:1px solid #e5383b;
+                }
+
+
+    
+                
+            }
+        }
+    }
+}
